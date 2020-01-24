@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+li,
+a,
+button {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.logo {
+  width: 8rem;
+  cursor: pointer;
+}
+
+header {
+  height: 38rem;
+  background-image: url("/images/header.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 0.5rem 1rem;
+  margin-bottom: 2rem;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      list-style: none;
+    }
+    li {
+      margin: 0.5rem;
+      padding: 0.5rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 1.2em;
+
+      a {
+        transition: all 0.3 ease 0s;
+      }
+      a:hover {
+        color: slateblue;
+      }
+    }
+  }
+}
+
+.header-text {
+  color: whitesmoke;
+  text-align: center;
+  margin: 23rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+
+  button {
+    margin: 1rem;
+    padding: 0.8rem 1rem;
+    color: #333;
+    width: 12rem;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 14px;
+    transition: all 0.3 ease 0s;
+  }
+}
+
+button {
+  padding: 0.8rem 1rem;
+  width: 8rem;
+  border: 1px whitesmoke solid;
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 14px;
+  transition: all 0.3 ease 0s;
+}
+button:hover {
+  background-color: whitesmoke;
+  color: #333;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+  
+  
+ 
+  div {
+  
+    color: #333;
+    border-right: 1px solid #e2e2e2;
+    grid-auto-rows: minmax(300px, auto);
+   
+    i {
+      color: #e2e2e2;
+       justify-content: center;
+    align-items:center;
+    }
+  }
+}
+
+.body {
+  height: 50rem
+}
